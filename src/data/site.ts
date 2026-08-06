@@ -22,7 +22,7 @@ export const hero = {
 export const about = {
   lede: "I've spent my career on both sides of the wire — breaking banks and fintechs as a consultant and bounty hunter, then building the security programs that stop people like me.",
   cols: [
-    'At Tabby I own application security end to end: the bug bounty program, PCI-DSS technical controls, cloud security posture across GCP, and the DevSecOps pipelines that put security checks in front of every merge request.',
+    'At Tabby I lead security end to end: VAPT across web, mobile and API, DevSecOps pipelines in GitLab, cloud and GKE runtime security on GCP, the bug bounty program, PCI-DSS and SAMA compliance, endpoint security, and incident response automation.',
     'Before that: pentesting hardened Active Directory environments for banks, mobile assessments with Frida, AWS cloud reviews — and four years hunting bugs on HackerOne, Bugcrowd and private programs.',
   ],
   figures: [
