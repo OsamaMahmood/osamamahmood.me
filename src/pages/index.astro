@@ -18,6 +18,33 @@ const banner = ` ██████╗ ███████╗ █████�
 ██║   ██║╚════██║██╔══██║██║╚██╔╝██║██╔══██║
 ╚██████╔╝███████║██║  ██║██║ ╚═╝ ██║██║  ██║
  ╚═════╝ ╚══════╝╚═╝  ╚═╝╚═╝     ╚═╝╚═╝  ╚═╝`;
+
+const pageTitle = 'Osama Mahmood — Cyber Security Lead | AppSec, Cloud Security & DevSecOps';
+const pageDescription =
+  'Osama Mahmood is a Cyber Security Lead at Tabby in Dubai — application security, ' +
+  'cloud & GKE security, DevSecOps, bug bounty and incident response for fintech at scale. OSCP certified.';
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: 'Osama Mahmood',
+  url: 'https://osamamahmood.me/',
+  image: 'https://osamamahmood.me/og.png',
+  email: `mailto:${profile.email}`,
+  jobTitle: 'Cyber Security Lead',
+  worksFor: { '@type': 'Organization', name: 'Tabby', url: 'https://tabby.ai' },
+  address: { '@type': 'PostalAddress', addressLocality: 'Dubai', addressCountry: 'AE' },
+  alumniOf: { '@type': 'CollegeOrUniversity', name: 'National University of Modern Languages' },
+  sameAs: [profile.github, profile.linkedin],
+  knowsAbout: [
+    'Application Security', 'DevSecOps', 'Cloud Security', 'Penetration Testing',
+    'Bug Bounty', 'Kubernetes Security', 'Incident Response', 'PCI-DSS', 'SAMA Compliance',
+  ],
+  hasCredential: certs.map((c) => ({
+    '@type': 'EducationalOccupationalCredential',
+    name: `${c.name} (${c.abbr})`,
+  })),
+};
 ---
 
 <!doctype html>
@@ -25,16 +52,29 @@ const banner = ` ██████╗ ███████╗ █████�
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Osama Mahmood — Cyber Security Lead</title>
-    <meta name="description" content={profile.description} />
+    <title>{pageTitle}</title>
+    <meta name="description" content={pageDescription} />
+    <meta name="author" content="Osama Mahmood" />
+    <meta name="robots" content="index, follow" />
     <meta name="theme-color" content="#14141f" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="canonical" href="https://osamamahmood.me/" />
-    <meta property="og:type" content="website" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <meta property="og:type" content="profile" />
+    <meta property="og:site_name" content="Osama Mahmood" />
+    <meta property="og:locale" content="en_US" />
     <meta property="og:title" content="Osama Mahmood — Cyber Security Lead" />
-    <meta property="og:description" content={profile.description} />
+    <meta property="og:description" content={pageDescription} />
     <meta property="og:url" content="https://osamamahmood.me/" />
-    <meta name="twitter:card" content="summary" />
+    <meta property="og:image" content="https://osamamahmood.me/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Terminal-style card: Osama Mahmood, Cyber Security Lead @ Tabby" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Osama Mahmood — Cyber Security Lead" />
+    <meta name="twitter:description" content={pageDescription} />
+    <meta name="twitter:image" content="https://osamamahmood.me/og.png" />
+    <script type="application/ld+json" is:inline set:html={JSON.stringify(jsonLd)} />
   </head>
   <body>
     <div class="titlebar">
@@ -46,9 +86,10 @@ const banner = ` ██████╗ ███████╗ █████�
     </div>
 
     <header class="hero wrap" id="whoami">
+      <h1 class="sr-only">Osama Mahmood — Cyber Security Lead at Tabby, Dubai</h1>
       <div class="hero-cmd"><span class="p">❯</span> <span class="c">whoami</span></div>
       <pre class="banner" aria-hidden="true">{banner}</pre>
-      <h1 class="banner-sub">M A H M O O D<span class="cursor"></span></h1>
+      <div class="banner-sub" aria-hidden="true">M A H M O O D<span class="cursor"></span></div>
       <p class="hero-lede">
         <strong>Cyber Security Lead at Tabby</strong> — securing the Gulf's first fintech
         unicorn and its <strong>15M+ users</strong>. Breaking things since 2014; building
@@ -72,6 +113,7 @@ const banner = ` ██████╗ ███████╗ █████�
     </header>
 
     <section id="about">
+      <h2 class="sr-only">About</h2>
       <div class="wrap sec">
         <div class="sec-label">
           <span class="sec-idx">[01]</span>
@@ -99,6 +141,7 @@ const banner = ` ██████╗ ███████╗ █████�
     </section>
 
     <section id="experience">
+      <h2 class="sr-only">Experience</h2>
       <div class="wrap sec">
         <div class="sec-label">
           <span class="sec-idx">[02]</span>
@@ -126,6 +169,7 @@ const banner = ` ██████╗ ███████╗ █████�
     </section>
 
     <section id="skills">
+      <h2 class="sr-only">Skills</h2>
       <div class="wrap sec">
         <div class="sec-label">
           <span class="sec-idx">[03]</span>
@@ -145,6 +189,7 @@ const banner = ` ██████╗ ███████╗ █████�
     </section>
 
     <section id="oss">
+      <h2 class="sr-only">Open-source projects</h2>
       <div class="wrap sec">
         <div class="sec-label">
           <span class="sec-idx">[04]</span>
@@ -184,6 +229,7 @@ const banner = ` ██████╗ ███████╗ █████�
     </section>
 
     <section id="research">
+      <h2 class="sr-only">Security research</h2>
       <div class="wrap sec">
         <div class="sec-label">
           <span class="sec-idx">[05]</span>
@@ -209,6 +255,7 @@ const banner = ` ██████╗ ███████╗ █████�
     </section>
 
     <section id="certs">
+      <h2 class="sr-only">Certifications</h2>
       <div class="wrap sec">
         <div class="sec-label">
           <span class="sec-idx">[06]</span>
@@ -229,6 +276,7 @@ const banner = ` ██████╗ ███████╗ █████�
     </section>
 
     <section id="writing">
+      <h2 class="sr-only">Writing</h2>
       <div class="wrap sec">
         <div class="sec-label">
           <span class="sec-idx">[07]</span>
