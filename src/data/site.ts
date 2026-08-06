@@ -203,8 +203,8 @@ export interface Cert {
 }
 
 export const certs: Cert[] = [
-  { abbr: 'OSCP', name: 'Offensive Security Certified Professional', year: '2025', featured: true },
   { abbr: 'CTMP', name: 'Certified Threat Modeling Professional', year: '2026' },
+  { abbr: 'OSCP', name: 'Offensive Security Certified Professional', year: '2025', featured: true },
   { abbr: 'CKA', name: 'Certified Kubernetes Administrator', year: '2024' },
   { abbr: 'CDP', name: 'Certified DevSecOps Professional', year: '2023' },
   { abbr: 'CNSP', name: 'Certified Network Security Practitioner', year: '2023' },
