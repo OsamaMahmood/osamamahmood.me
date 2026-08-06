@@ -29,7 +29,7 @@ export const about = {
     { n: '2014', sup: '', label: 'breaking since' },
     { n: '15', sup: 'M+', label: 'users protected' },
     { n: '100', sup: '+', label: 'pentests delivered' },
-    { n: '13', sup: '', label: 'certifications' },
+    { n: '14', sup: '', label: 'certifications' },
   ],
 };
 
@@ -203,19 +203,20 @@ export interface Cert {
 }
 
 export const certs: Cert[] = [
-  { abbr: 'CTMP', name: 'Certified Threat Modeling Professional', year: '2026', featured: true },
-  { abbr: 'OSCP', name: 'Offensive Security Certified Professional', year: '2025' },
-  { abbr: 'CKA', name: 'Certified Kubernetes Administrator', year: '2024' },
-  { abbr: 'CDP', name: 'Certified DevSecOps Professional', year: '2023' },
+  { abbr: 'CTMP', name: 'Certified Threat Modeling Professional', year: '2026', featured: true, url: 'https://www.credly.com/badges/429de951-ab5b-4642-9406-153181db451c/public_url' },
+  { abbr: 'OSCP+', name: 'OffSec Certified Professional Plus', year: '2025', url: 'https://credentials.offsec.com/628f1d62-67e5-4f39-b620-db7adfe0d450#acc.VbWPtidp' },
+  { abbr: 'OSCP', name: 'Offensive Security Certified Professional', year: '2025', url: 'https://credentials.offsec.com/3f57244b-192e-4f76-8f66-00e9e84b1252#acc.K8CD6njw' },
+  { abbr: 'CKA', name: 'Certified Kubernetes Administrator', year: '2024', url: 'https://www.credly.com/badges/6bb7b5d0-04bf-4990-b36d-670d9ee956f1' },
+  { abbr: 'CDP', name: 'Certified DevSecOps Professional', year: '2023', url: 'https://www.credly.com/badges/b2a11378-8a95-4838-9d23-78b591da4256/public_url' },
   { abbr: 'CNSP', name: 'Certified Network Security Practitioner', year: '2023' },
-  { abbr: 'APIsec', name: 'API Penetration Testing', year: '2023' },
-  { abbr: 'CMPen', name: 'Certified Mobile Pentester — Android', year: '2023' },
-  { abbr: 'CAPen', name: 'Certified AppSec Pentester', year: '2023' },
-  { abbr: 'CCSP', name: 'Certified Cloud Security Practitioner — AWS', year: '2023' },
-  { abbr: 'CAP', name: 'Certified AppSec Practitioner', year: '2023' },
+  { abbr: 'APIsec', name: 'API Penetration Testing', year: '2023', url: 'https://www.credly.com/badges/567e6f62-789a-40d3-baa7-d58df6486b59' },
+  { abbr: 'CMPen', name: 'Certified Mobile Pentester — Android', year: '2023', url: 'https://candidate.speedexam.net/certificate.aspx?SSTATE=am4131EniU8ntjp4bO5mXT7w57pCIrhsMNz4RCnJnt0l2gRpIguDXke30hSFOn4lJfUMAj+VePnC5NeZhjvOUiQ9CGQvWWO/pzvreWFu9Kc=' },
+  { abbr: 'CAPen', name: 'Certified AppSec Pentester', year: '2023', url: 'https://candidate.speedexam.net/certificate.aspx?SSTATE=am4131EniU8ntjp4bO5mXY/1FyCk2E1SQHdDKkhvpRAWc853j7nhkU9l4RqjszAfx0uWl/1rh+i21a+7Dligp1Zs+wt/w+NO4spwLs2uwg4=' },
+  { abbr: 'CCSP', name: 'Certified Cloud Security Practitioner — AWS', year: '2023', url: 'https://candidate.speedexam.net/certificate.aspx?SSTATE=am4131EniU8ntjp4bO5mXZaq5hWt9iDFMzOauTAdQu40pNg7d3+UWUlK/lytpxr49gGeO23+5VntkRwe9UUDZiJhwBg+aCRfSYNSg4/jdXw=' },
+  { abbr: 'CAP', name: 'Certified AppSec Practitioner', year: '2023', url: 'https://candidate.speedexam.net/certificate.aspx?SSTATE=am4131EniU8ntjp4bO5mXXwQTWuaW7a82z/H/o7OVfKwkMG8B+xKOjLaVreR25Z+BCxVxKfYhNhfJIAF/RwRxXsAKsbZ/d9s6jedTwPdRSQ=' },
   { abbr: 'ICSI', name: 'CyberSecurity Essentials', year: '2020' },
-  { abbr: 'CWASP', name: 'Certified Web Application Security Professional', year: '2019' },
-  { abbr: 'CPTP', name: 'Certified Penetration Testing Professional', year: '2018' },
+  { abbr: 'CWASP', name: 'Certified Web Application Security Professional', year: '2019', url: 'https://www.credential.net/3j9xquao#acc.nCsJ2cih' },
+  { abbr: 'CPTP', name: 'Certified Penetration Testing Professional', year: '2018', url: 'https://www.credential.net/zrfgddwe#acc.yIl7eVxA' },
 ];
 
 export const navWindows = [
