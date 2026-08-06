@@ -29,7 +29,7 @@ export const about = {
     { n: '2014', sup: '', label: 'breaking since' },
     { n: '15', sup: 'M+', label: 'users protected' },
     { n: '100', sup: '+', label: 'pentests delivered' },
-    { n: '12', sup: '', label: 'certifications' },
+    { n: '13', sup: '', label: 'certifications' },
   ],
 };
 
@@ -197,6 +197,7 @@ export interface Cert {
 }
 
 export const certs: Cert[] = [
+  { abbr: 'CTMP', name: 'Certified Threat Modeling Professional', year: '2026' },
   { abbr: 'OSCP', name: 'Offensive Security Certified Professional', year: '2025', featured: true },
   { abbr: 'CKA', name: 'Certified Kubernetes Administrator', year: '2024' },
   { abbr: 'CDP', name: 'Certified DevSecOps Professional', year: '2023' },
