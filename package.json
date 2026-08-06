@@ -1,0 +1,16 @@
+{
+  "name": "osamamahmood.me",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "@fontsource/geist-mono": "^5.2.5",
+    "@fontsource/inter": "^5.2.5",
+    "astro": "^5.12.0"
+  }
+}
