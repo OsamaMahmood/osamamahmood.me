@@ -52,8 +52,8 @@ export const experience: Role[] = [
     title: 'Cyber Security Lead',
     company: 'Tabby',
     meta: 'dubai, uae · 2023 — present',
-    body: 'Leading security for the region’s largest BNPL platform: vulnerability management on <strong>DefectDojo</strong>, the <strong>bug bounty</strong> program end to end, <strong>PCI-DSS</strong> technical compliance, and incident response automation with Elastic SIEM and n8n SOAR.',
-    tags: ['gcp', 'gitlab', 'wiz', 'kubernetes', 'sentinelone'],
+    body: 'Leading security for the region’s largest BNPL platform. Own <strong>VAPT</strong> across web, mobile and API, <strong>DevSecOps</strong> pipelines in GitLab (SAST, DAST, container image scanning), and cloud &amp; <strong>GKE runtime security</strong> with Wiz and Falco. Run the <strong>bug bounty</strong> program and vulnerability management on DefectDojo, drive <strong>PCI-DSS</strong> and <strong>SAMA</strong> compliance controls, manage the endpoint security fleet (SentinelOne, Jamf, MDM), and built IR automation with Elastic SIEM and n8n SOAR.',
+    tags: ['gcp', 'gitlab', 'wiz', 'falco', 'kubernetes', 'sentinelone'],
   },
   {
     hash: 'b3c7d90',
@@ -93,7 +93,7 @@ export const experience: Role[] = [
 export const skills = [
   { dir: 'appsec/', items: 'SAST · DAST · SCA · secure code review · bug bounty ops' },
   { dir: 'devsecops/', items: 'GitLab CI · Terraform · Kubernetes · DefectDojo · Trivy' },
-  { dir: 'cloud/', items: 'GCP · AWS · Wiz CSPM · container & GKE runtime security' },
+  { dir: 'cloud/', items: 'GCP · AWS · Wiz CSPM · GKE security — Falco runtime monitoring, image scanning, workload hardening' },
   { dir: 'offensive/', items: 'web · mobile (Frida) · API · Active Directory · network' },
   { dir: 'detection/', items: 'Elastic SIEM · Wazuh · n8n SOAR · Python automation' },
   { dir: 'endpoint/', items: 'SentinelOne · Jamf Pro / Protect · ManageEngine MDM' },
@@ -117,11 +117,16 @@ export const projects: Project[] = [
     lang: 'python',
   },
   {
-    name: 'lazytask',
-    url: 'https://github.com/OsamaMahmood/lazytask',
-    desc: 'Terminal UI for Taskwarrior, in the spirit of lazygit.',
-    lang: 'rust',
-    stars: 13,
+    name: 'dd-reporting',
+    url: 'https://github.com/OsamaMahmood/dd-reporting',
+    desc: 'Well-structured, customizable pentest and vulnerability reports out of DefectDojo data.',
+    lang: 'python',
+  },
+  {
+    name: 'cloud-ip-ranges',
+    url: 'https://github.com/OsamaMahmood/IP-Ranges-For-Cloud-Provides',
+    desc: 'Collect the IP ranges owned by AWS, GCP and other public cloud providers — recon and allowlisting aid.',
+    lang: 'python',
   },
   {
     name: 'opensearch-snapshots',
@@ -131,10 +136,11 @@ export const projects: Project[] = [
     stars: 4,
   },
   {
-    name: 'dd-reporting',
-    url: 'https://github.com/OsamaMahmood/dd-reporting',
-    desc: 'Well-structured, customizable reports out of DefectDojo data.',
-    lang: 'python',
+    name: 'lazytask',
+    url: 'https://github.com/OsamaMahmood/lazytask',
+    desc: 'Hobby project — terminal UI for Taskwarrior, in the spirit of lazygit.',
+    lang: 'rust',
+    stars: 13,
   },
   {
     name: 'dotfiles',
@@ -197,8 +203,8 @@ export interface Cert {
 }
 
 export const certs: Cert[] = [
-  { abbr: 'CTMP', name: 'Certified Threat Modeling Professional', year: '2026' },
   { abbr: 'OSCP', name: 'Offensive Security Certified Professional', year: '2025', featured: true },
+  { abbr: 'CTMP', name: 'Certified Threat Modeling Professional', year: '2026' },
   { abbr: 'CKA', name: 'Certified Kubernetes Administrator', year: '2024' },
   { abbr: 'CDP', name: 'Certified DevSecOps Professional', year: '2023' },
   { abbr: 'CNSP', name: 'Certified Network Security Practitioner', year: '2023' },
