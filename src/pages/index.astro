@@ -308,5 +308,21 @@ const jsonLd = {
         <span>no trackers</span><span class="sep">│</span><span>100% static</span><span class="sep">│</span><span>dxb · utc+4</span>
       </div>
     </nav>
+    <script is:inline>
+      (function () {
+        var links = document.querySelectorAll('.status-wins a');
+        var map = {};
+        links.forEach(function (l) { map[l.getAttribute('href').slice(1)] = l; });
+        var obs = new IntersectionObserver(function (entries) {
+          entries.forEach(function (e) {
+            if (e.isIntersecting && map[e.target.id]) {
+              links.forEach(function (l) { l.classList.remove('active'); });
+              map[e.target.id].classList.add('active');
+            }
+          });
+        }, { rootMargin: '-40% 0px -55% 0px' });
+        document.querySelectorAll('header[id], section[id], footer[id]').forEach(function (s) { obs.observe(s); });
+      })();
+    </script>
   </body>
 </html>

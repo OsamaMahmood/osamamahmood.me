@@ -128,7 +128,7 @@ a { color: inherit; }
 .sbtn.em:hover { background: var(--cyan); }
 
 /* ── section scaffolding ── */
-section { border-top: 1px solid var(--line); padding: 92px 0; }
+section { border-top: 1px solid var(--line); padding: 92px 0; scroll-margin-top: 46px; }
 .sec { display: grid; grid-template-columns: 230px 1fr; gap: 64px; }
 .sec-label { position: sticky; top: 66px; align-self: start; font-family: var(--mono); }
 .sec-idx { font-size: 11.5px; letter-spacing: 0.12em; color: var(--ghost); display: block; margin-bottom: 10px; }
@@ -285,10 +285,13 @@ section { border-top: 1px solid var(--line); padding: 92px 0; }
 .status-session { background: var(--green); color: var(--bg); font-weight: 700; display: flex; align-items: center; padding: 0 15px; flex-shrink: 0; }
 .status-wins { display: flex; align-items: stretch; flex: 1; overflow-x: auto; scrollbar-width: none; }
 .status-wins::-webkit-scrollbar { display: none; }
-.status-wins a { display: flex; align-items: center; padding: 0 13px; color: var(--faint); text-decoration: none; white-space: nowrap; transition: all 0.15s; }
+.status-wins a { display: flex; align-items: center; padding: 0 13px; font-size: 12.5px; font-weight: 500; color: var(--dim); text-decoration: none; white-space: nowrap; transition: all 0.15s; }
 .status-wins a:hover { color: var(--bright); background: var(--bg-hl); }
-.status-wins a b { color: var(--ghost); font-weight: 400; margin-right: 4px; }
+.status-wins a b { color: var(--faint); font-weight: 400; margin-right: 4px; }
 .status-wins a:hover b { color: var(--yellow); }
+.status-wins a.active { background: var(--bg-hl); color: var(--bright); box-shadow: inset 0 2px 0 var(--yellow); }
+.status-wins a.active b { color: var(--yellow); }
+.status-wins a.active::after { content: '*'; color: var(--yellow); margin-left: 3px; }
 .status-right { display: flex; align-items: center; padding: 0 16px; color: var(--ghost); white-space: nowrap; flex-shrink: 0; }
 .status-right span { padding: 0 8px; }
 .status-right .sep { color: var(--line-strong); padding: 0; }
