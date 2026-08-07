@@ -93,7 +93,8 @@ export const experience: Role[] = [
 export const skills = [
   { dir: 'appsec/', items: 'SAST · DAST · SCA · secure code review · bug bounty ops' },
   { dir: 'devsecops/', items: 'GitLab CI · Terraform · Kubernetes · DefectDojo · Trivy' },
-  { dir: 'cloud/', items: 'GCP · AWS · Wiz CSPM · GKE security — Falco runtime monitoring, image scanning, workload hardening' },
+  { dir: 'cloud/', items: 'GCP · AWS · Wiz CSPM · cloud security posture' },
+  { dir: 'gke/', items: 'Falco runtime monitoring · image scanning · workload hardening' },
   { dir: 'offensive/', items: 'web · mobile (Frida) · API · Active Directory · network' },
   { dir: 'detection/', items: 'Elastic SIEM · Wazuh · n8n SOAR · Python automation' },
   { dir: 'endpoint/', items: 'SentinelOne · Jamf Pro / Protect · ManageEngine MDM' },
