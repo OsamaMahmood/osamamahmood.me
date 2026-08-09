@@ -126,6 +126,8 @@ a { color: inherit; }
 .sbtn.gh:hover { background: var(--magenta); }
 .sbtn.li:hover { background: var(--blue); }
 .sbtn.em:hover { background: var(--cyan); }
+.sbtn.rs { color: var(--yellow); border-color: rgba(249, 226, 175, 0.35); }
+.sbtn.rs:hover { background: var(--yellow); color: var(--bg); }
 
 /* ── section scaffolding ── */
 section { border-top: 1px solid var(--line); padding: 92px 0; scroll-margin-top: 46px; }
